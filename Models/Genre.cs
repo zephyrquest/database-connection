@@ -1,6 +1,6 @@
 ﻿namespace DatabaseConnection.Models
 {
-    public class Artist
+    public class Genre
     {
         public long Id { get; set; }
         public required string Name { get; set; }

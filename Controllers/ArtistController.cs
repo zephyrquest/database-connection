@@ -1,6 +1,6 @@
 ﻿using DatabaseConnection.Models;
+using DatabaseConnection.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseConnection.Controllers
 {
@@ -8,30 +8,24 @@ namespace DatabaseConnection.Controllers
     [Route("api/artists")]
     public class ArtistController : ControllerBase
     {
-        private readonly RepositoryContext _repositoryContext;
+        private readonly ArtistRepository _artistRepository;
 
 
-        public ArtistController(RepositoryContext repositoryContext)
+        public ArtistController(ArtistRepository artistRepository)
         {
-            this._repositoryContext = repositoryContext;
+            _artistRepository = artistRepository;
         }
 
         [HttpGet()]
         public async Task<ActionResult<List<Artist>>> GetArtists()
         {
-            var artists = await _repositoryContext.Artists
-                .FromSqlInterpolated($"SELECT * FROM Artists")
-                .ToListAsync();
-
-            return artists;
+            return await _artistRepository.GetAllArtists();
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Artist>> GetArtist(long id)
         {
-            var artist = await _repositoryContext.Artists
-                .FromSqlInterpolated($"SELECT * FROM Artists WHERE Id = {id}")
-                .FirstOrDefaultAsync();
+            var artist = await _artistRepository.GetArtistById(id);
 
             if (artist == null)
             {
@@ -51,8 +45,7 @@ namespace DatabaseConnection.Controllers
 
             try
             {
-                await _repositoryContext.Database
-                    .ExecuteSqlInterpolatedAsync($"INSERT INTO Artists (Name) VALUES ({artist.Name})");
+                await _artistRepository.AddNewArtist(artist);
             }
             catch (Exception ex)
             {
