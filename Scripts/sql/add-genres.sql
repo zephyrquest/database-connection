@@ -7,4 +7,5 @@ values
 ('Metal'),
 ('Alternative'),
 ('Blues'),
-('Jazz');
+('Jazz'),
+('Post-rock');

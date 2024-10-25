@@ -19,7 +19,9 @@ namespace DatabaseConnection.Controllers
         [HttpGet()]
         public async Task<ActionResult<List<Artist>>> GetArtists()
         {
-            return await _artistRepository.GetAllArtists();
+            var artists = await _artistRepository.GetAllArtists();
+
+            return Ok(artists);
         }
 
         [HttpGet("{id}")]
@@ -32,7 +34,7 @@ namespace DatabaseConnection.Controllers
                 return NotFound();
             }
 
-            return artist;
+            return Ok(artist);
         }
 
         [HttpPost]

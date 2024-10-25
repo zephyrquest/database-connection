@@ -12,6 +12,20 @@ namespace DatabaseConnection.Repositories
             _repositoryContext = repositoryContext;
         }
 
+        public async Task InitEntities(string filePath)
+        {
+            try
+            {
+                var fileContent = await File.ReadAllTextAsync(filePath);
+
+                await _repositoryContext.Database.ExecuteSqlRawAsync(fileContent);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+        }
+
         public async Task InitArtists()
         {
             try

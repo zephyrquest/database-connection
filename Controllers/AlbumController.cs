@@ -1,7 +1,6 @@
 ﻿using DatabaseConnection.Models;
 using DatabaseConnection.Repositories;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseConnection.Controllers
 {
@@ -11,12 +10,15 @@ namespace DatabaseConnection.Controllers
     {
         private readonly AlbumRepository _albumRepository;
         private readonly ArtistRepository _artistRepository;
+        private readonly GenreRepository _genreRepository;
 
 
-        public AlbumController(AlbumRepository albumRepository, ArtistRepository artistRepository)
+        public AlbumController(AlbumRepository albumRepository, ArtistRepository artistRepository,
+            GenreRepository genreRepository)
         {
             _albumRepository = albumRepository;
             _artistRepository = artistRepository;
+            _genreRepository = genreRepository;
         }
 
         [HttpGet]
@@ -24,7 +26,7 @@ namespace DatabaseConnection.Controllers
         {
             var albums = await _albumRepository.GetAllAlbums();
 
-            return albums;
+            return Ok(albums);
         }
 
         [HttpGet("{id}")]
@@ -37,7 +39,7 @@ namespace DatabaseConnection.Controllers
                 return NotFound();
             }
 
-            return album;
+            return Ok(album);
         }
 
         [HttpPost]
@@ -55,9 +57,15 @@ namespace DatabaseConnection.Controllers
                 return NotFound($"No artist found with id {album.ArtistId}");
             }
 
+            var genre = await _genreRepository.GetGenreById(album.GenreId);
+
+            if(genre == null)
+            {
+                return NotFound($"No genre found with id {album.GenreId}");
+            }
+
             try
             {
-                album.Artist = artist;
                 await _albumRepository.AddNewAlbum(album);
             }
             catch (Exception ex)

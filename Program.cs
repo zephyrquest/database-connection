@@ -23,6 +23,8 @@ namespace DatabaseConnection
 
             builder.Services.AddScoped<ArtistRepository>();
             builder.Services.AddScoped<AlbumRepository>();
+            builder.Services.AddScoped<GenreRepository>();
+            builder.Services.AddScoped<TrackRepository>();
             builder.Services.AddScoped<RepositoryInitializer>();
 
             builder.Services.AddControllers().AddNewtonsoftJson(options =>
@@ -48,11 +50,28 @@ namespace DatabaseConnection
                 var services = scope.ServiceProvider;
                 try
                 {
+                    var repositoryContext = services.GetRequiredService<RepositoryContext>();
                     var repositoryInitializer = services.GetRequiredService<RepositoryInitializer>();
-                    await repositoryInitializer.InitArtists();
-                    await repositoryInitializer.InitGenres();
-                    await repositoryInitializer.InitAlbums();
-                    await repositoryInitializer.InitTracks();
+
+                    if(!repositoryContext.Artists.Any())
+                    {
+                        await repositoryInitializer.InitArtists();
+                    }
+
+                    if (!repositoryContext.Genres.Any())
+                    {
+                        await repositoryInitializer.InitGenres();
+                    }
+
+                    if (!repositoryContext.Albums.Any())
+                    {
+                        await repositoryInitializer.InitAlbums();
+                    }
+                    
+                    if(!repositoryContext.Tracks.Any())
+                    {
+                        await repositoryInitializer.InitTracks();
+                    }
                 }
                 catch (Exception ex)
                 {

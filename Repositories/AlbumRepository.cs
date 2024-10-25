@@ -1,5 +1,4 @@
 ﻿using DatabaseConnection.Models;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
 namespace DatabaseConnection.Repositories
@@ -25,35 +24,10 @@ namespace DatabaseConnection.Repositories
 
         public async Task<Album?> GetAlbumById(long id)
         {
-            /*var album = await _repositoryContext.Albums
-                .FromSqlInterpolated($"SELECT * FROM Albums WHERE Id = {id}")
-                .FirstOrDefaultAsync();*/
-
-            /*var album = await _repositoryContext.Albums
-                .FromSqlInterpolated($@"
-                    SELECT a.Id, a.Title, a.ReleaseDate, a.ArtistId,
-                           ar.Id AS ArtistId, ar.Name AS ArtistName
-                    FROM Albums a
-                    JOIN Artists ar ON a.ArtistId = ar.Id
-                    WHERE a.Id = {id}
-                ")
-                .Select(a => new Album
-                {
-                    Id = a.Id,
-                    Title = a.Title,
-                    ReleaseDate = a.ReleaseDate,
-                    ArtistId = a.ArtistId,
-                    Artist = new Artist
-                    {
-                        Id = a.ArtistId,
-                        Name = a.Artist.Name
-                    }
-                })
-                .FirstOrDefaultAsync();*/
-
             var album = await _repositoryContext.Albums
                 .Include(a => a.Artist)
                 .Include(a => a.Genre)
+                .Include(a => a.Tracks)
                 .FirstOrDefaultAsync(a => a.Id == id);
 
             return album;
@@ -63,7 +37,8 @@ namespace DatabaseConnection.Repositories
         {
             await _repositoryContext.Database
                 .ExecuteSqlInterpolatedAsync(
-                $"INSERT INTO Albums (Title, ReleaseDate, ArtistId) VALUES ({album.Title}, {album.ReleaseDate}, {album.ArtistId})"
+                $@"INSERT INTO Albums (Title, ReleaseDate, ArtistId, GenreId) 
+                    VALUES ({album.Title}, {album.ReleaseDate}, {album.ArtistId}, {album.GenreId})"
                 );
         }
     }

@@ -61,3 +61,45 @@ values
 	('Never Let Me Go', '2022-03-25',
 	(select Id from Artists where Name = 'Placebo'),
 	(select Id from Genres where Name = 'Rock'));
+
+insert into Albums (Title, ReleaseDate, ArtistId, GenreId)
+values
+	('Young Team', '1997-10-21',
+	(select Id from Artists where Name = 'Mogwai'),
+	(select id from Genres where Name = 'Post-rock')),
+
+	('Come On Die Young', '1999-03-29',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('Rock Action', '2001-04-23',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('Happy Songs for Happy People', '2003-06-17',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('Mr. Beast', '2006-03-06',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('The Hawk Is Howling', '2008-09-22',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('Hardcore Will Never Die, But You Will', '2011-02-14',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('Rave Tapes', '2014-01-20',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('Every Country''s Sun', '2017-09-01',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock')),
+
+    ('As the Love Continues', '2021-02-19',
+    (select Id from Artists where Name = 'Mogwai'),
+    (select Id from Genres where Name = 'Post-rock'));

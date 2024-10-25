@@ -70,7 +70,6 @@ values ('Pushing Me Away', 192,
          inner join Artists ar on a.ArtistId = ar.Id
          where a.Title = 'Hybrid Theory' and ar.Name = 'Linkin Park'));
         
--- Insert each track individually for the Meteora album
 insert into Tracks (Title, Length, AlbumId)
 values ('Foreword', 13,
         (select a.Id from Albums a
@@ -1049,3 +1048,600 @@ values ('Running Up That Hill', 247,
         (select a.Id from Albums a
          inner join Artists ar on a.ArtistId = ar.Id
          where a.Title = 'Never Let Me Go' and ar.Name = 'Placebo'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Yes! I Am a Long Way from Home', 413,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Like Herod', 692,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Katrien', 260,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Radar Maker', 104,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Tracy', 444,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Summer (Priority Version)', 353,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('With Portfolio', 209,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('R U Still in 2 It', 451,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('A Cheery Wave from Stranded Youngsters', 125,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Mogwai Fear Satan', 990,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Young Team' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Punk Rock:', 129,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Cody', 393,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Helps Both Ways', 293,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Year 2000 Non-Compliant Cardia', 206,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Kappa', 293,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Waltz for Aidan', 224,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('May Nothing But Happiness Come Through Your Door', 510,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Oh! How the Dogs Stack Up', 124,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Ex-Cowboy', 549,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Chocky', 563,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Christmas Steps', 639,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Punk Rock/Puff Daddy/ANTICHRIST', 134,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Come On Die Young' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Sine Wave', 295,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Take Me Somewhere Nice', 417,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('O I Sleep', 55,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Dial: Revenge', 208,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('You Don''t Know Jesus', 482,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Robot Chant', 63,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('2 Rights Make 1 Wrong', 571,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Secret Pint', 217,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Rock Action' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Hunted By A Freak', 258,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Moses? I Amn''t', 179,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Kids Will Be Skeletons', 329,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Killing All The Flies', 275,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Boring Machines Disturbs Sleep', 185,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Ratts of the Capital', 507,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Golden Porsche', 169,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('I Know You Are But What Am I?', 317,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Stop Coming To My House', 293,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Happy Songs for Happy People' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Auto Rock', 258,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Glasgow Mega-Snake', 215,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Acid Food', 220,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Travel Is Dangerous', 241,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Team Handed', 238,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Friend of the Night', 330,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Emergency Trap', 211,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Folk Death 95', 214,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('I Chose Horses', 313,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('We''re No Here', 339,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Mr. Beast' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Take Me Somewhere Nice', 410,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Glasgow Mega-Snake', 384,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Batcat', 353,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('The Sun Smells Too Loud', 292,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('I’m Jim Morrison, I’m Dead', 261,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('The Hawk Is Howling', 399,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Thank You Space Expert', 314,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('The Precipice', 389,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Scotland’s Shame', 313,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('The Sun Smells Too Loud (alternate version)', 295,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'The Hawk Is Howling' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Take Me Somewhere Nice', 264,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Rano Pano', 285,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Death Rays', 235,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('San Pedro', 267,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('How to Be a Werewolf', 259,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('George Square Thatcher Death Party', 330,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Drunk and Crazy', 245,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Get to France', 279,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Hardcore Will Never Die, But You Will', 305,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('The Greatest Common Denominator', 290,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Hardcore Will Never Die, But You Will' and ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Heard About You Last Night', 268,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Simon Ferocious', 296,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Remurdered', 255,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Hexon Bogon', 292,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Stealth', 322,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Kettles', 292,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Blues Hour', 274,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('Take Me Somewhere Nice', 295,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('The Lord Is Out of Control', 338,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+INSERT INTO Tracks (Title, Length, AlbumId)
+VALUES ('No Medicine for Regret', 337,
+        (SELECT a.Id FROM Albums a
+         INNER JOIN Artists ar ON a.ArtistId = ar.Id
+         WHERE a.Title = 'Rave Tapes' AND ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Take Me Somewhere Nice', 356,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Coolverine', 273,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Party in the Dark', 253,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Brain Sweeties', 287,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('aka 47', 270,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Battered at a Scramble', 307,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Old Poisons', 304,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('20 Size', 290,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('We''re Not Done', 273,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Don''t Believe the Fife', 283,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values ('Every Country''s Sun', 336,
+        (select a.Id from Albums a
+         inner join Artists ar on a.ArtistId = ar.Id
+         where a.Title = 'Every Country''s Sun' and ar.Name = 'Mogwai'));
+
+insert into Tracks (Title, Length, AlbumId)
+values 
+('To the Bin My Friend, Tonight We Vacate Earth', 309,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Here We, Here We, Here We Go Forever', 285,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Dry Fantasy', 310,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Ritchie Sacramento', 252,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Drive the Nail', 434,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Fuck Off Money', 353,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Ceiling Granny', 238,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Midnight Flit', 368,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Pat Stains', 415,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('Supposedly, We Were Nightmares', 276,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai')),
+    
+('It''s What I Want to Do, Mum', 443,
+    (select a.Id from Albums a
+    inner join Artists ar on a.ArtistId = ar.Id
+    where a.Title = 'As the Love Continues' and ar.Name = 'Mogwai'));
